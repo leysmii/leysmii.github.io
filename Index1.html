@@ -12,8 +12,8 @@
 	</head>
 	<body>
 		
-		<script src="http://threejsplaygnd.brangerbriz.net/js/three.min.js"></script>
-		<script src="http://threejsplaygnd.brangerbriz.net/js/Detector.js"></script>
+		<script src="js/three.min.js"></script>
+		<script src="js/Detector.js"></script>
 		<script>
 
 			if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
@@ -46,7 +46,7 @@
 
 				requestAnimationFrame( draw );
 				
-								mesh.rotation.x = Date.now() * 0.0005;	
+				mesh.rotation.x = Date.now() * 0.0005;	
 				mesh.rotation.y = Date.now() * 0.0002;	
 				mesh.rotation.z = Date.now() * 0.001;
 

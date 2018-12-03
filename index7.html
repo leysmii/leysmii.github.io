@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio</title>
+</head>
+<body background="images/abstract.jpg">
+<br>
+<h2 style="background-color:#65b3cd;">
+<br>
+<header><font color="white" style="font-family:courier;"><center>Home&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Artist Statement&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="file:///C:/Users/Leysmi/Desktop/My%20website/portfolio.html">Portfolio </a></center></font></header>
+<br>
+</h2>
+
+<center>
+<p>
+	<h2><font color="white" style="font-family:courier;">Welcome to My Portfoilio</font></h2>
+	<h4><font color="white" style="font-family:courier;">Below is a series of different projects that were made throughout the months of August 2018 and October 2018 </font></h5> 
+
+	<br>
+    <center><h2 style="background-color:#65b3cd;"><font color="white" style="font-family:courier;"> Glitch Art Collage </font></h2></center>
+<img src="images/glitch.jpg" width="500" height="600">
+<br>
+<!-- <iframe width="560" height="315"src="href="https://sketchfab.com/models/c74e0da4d86746d49c9a8bef9b4f3cab""></iframe>
+ -->
+
+<center><h2 style="background-color:#65b3cd;"><font color="white" style="font-family:courier;"> 3D Object Mashup </font></h2> </center>
+<div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/c74e0da4d86746d49c9a8bef9b4f3cab/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+<!-- <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+    <a href="https://sketchfab.com/models/c74e0da4d86746d49c9a8bef9b4f3cab?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Snowball &amp; Mr. Snowman (Overwatch)</a>
+    by <a href="https://sketchfab.com/Leysmi?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Leysmi</a>
+    on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+</p> -->
+</div>
+
+<center><h2 style="background-color:#65b3cd;"><font color="white" style="font-family:courier;"> Video & Sound Art </font></h2></center>
+<iframe width="640" height="480" src="https://www.youtube.com/embed/uM3zWSwC1oc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+<p>
+<center><h2 style="background-color:#65b3cd;"><font color="white" style="font-family:courier;"> Net Art </font></h2></center>
+    <script src="http://threejsplaygnd.brangerbriz.net/js/three.min.js"></script>
+            <script src="http://threejsplaygnd.brangerbriz.net/js/Detector.js"></script>
+            <script>
+                if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
+                var camera, scene, renderer;
+                var geometry, material, mesh;
+                function setup() {
+                    var W = window.innerWidth, H = window.innerHeight;
+
+                    renderer = new THREE.WebGLRenderer( { preserveDrawingBuffer: true } );
+
+                    renderer.autoClearColor = false;
+
+                    renderer.setSize( W, H );
+
+                    document.body.appendChild( renderer.domElement );
+
+                    camera = new THREE.PerspectiveCamera( 50, W/H, 1, 10000 );
+
+                    camera.position.z = 500;
+
+                    scene = new THREE.Scene();
+                    
+                    for ( var i = 0; i < 300; i ++ ) {
+                    geometry = new THREE.TetrahedronGeometry(150, 1);
+                    material = new THREE.MeshNormalMaterial({shading: THREE.FlatShading});
+                    mesh = new THREE.Mesh(geometry, material);
+                        mesh.position.x = Math.random() * 00 - 300;
+                        mesh.position.y = Math.random() * 00 - 300;
+                        mesh.rotation.x = Math.random() * 5 * Math.PI;
+                        mesh.rotation.y = Math.random() * 3 * Math.PI;
+                        mesh.rotation.z = Math.random() * 1 * Math.PI;
+                        scene.add( mesh );
+                        mesh.position.x = Math.sin( Date.now() * 0.001 ) * 50;
+                        mesh.rotation.z = Date.now() * 0.0009;
+                    scene.add(mesh);
+                    }
+
+                }
+
+                function draw() {
+
+                    requestAnimationFrame( draw );
+                    camera.position.z = Math.sin( Date.now() * 0.0001) *400;
+                    camera.position.y = Math.sin( Date.now() * 0.0010 ) *300;
+                    camera.lookAt(mesh.position);
+                    renderer.render( scene, camera );
+                }
+                setup();
+
+                draw();
+            </script>   
+</p>
+
+</center>
+<h5 style="background-color:#65b3cd;">
+<br>
+<header><font color="white" style="font-family:courier;"><center>© Leysmi Paz | 2018</center></font></header>
+<br>
+</h5>
+</body>
+</html>
